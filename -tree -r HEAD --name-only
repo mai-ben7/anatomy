@@ -1,0 +1,29 @@
+[33mcommit 29ba0727f2f51b1dccaee5d1dc7ada639132e64d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: mai-ben7 <maib300301@gmail.com>
+Date:   Thu Aug 7 13:49:27 2025 +0300
+
+    Initial commit: 3D Anatomy Model with scroll-based 360 rotation
+
+.gitignore
+README.md
+app/globals.css
+app/layout.tsx
+app/page.tsx
+components/AnatomyModel.tsx
+components/AnatomySection.tsx
+components/Footer.tsx
+components/HeroSection.tsx
+components/InteractiveModelViewer.tsx
+components/MuscleExplanations.tsx
+components/ParticleEffect.tsx
+components/SystemOverview.tsx
+next-env.d.ts
+next.config.js
+package-lock.json
+package.json
+postcss.config.js
+public/male anatomical body 3d/anatomy_model.gltf
+public/male anatomical body 3d/license.txt
+public/male anatomical body 3d/scene.bin
+tailwind.config.js
+tsconfig.json

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Human Anatomy 3D Explorer
 
 An interactive, futuristic web application for exploring human anatomy through 3D visualization and educational content.
@@ -129,3 +130,6 @@ This project is licensed under the MIT License. The 3D model has its own license
 - Icons from Lucide React
 - Animations powered by Framer Motion
 - 3D rendering with React Three Fiber
+=======
+# anatomy
+>>>>>>> a7e619cda5dbacb7d280bb65ab6808d91c338bd6
