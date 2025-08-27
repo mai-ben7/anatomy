@@ -13,7 +13,6 @@ components/AnatomyModel.tsx
 components/AnatomySection.tsx
 components/Footer.tsx
 components/HeroSection.tsx
-components/InteractiveModelViewer.tsx
 components/MuscleExplanations.tsx
 components/ParticleEffect.tsx
 components/SystemOverview.tsx

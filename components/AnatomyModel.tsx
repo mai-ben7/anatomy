@@ -138,12 +138,12 @@ function Model({ scrollY }: { scrollY: number }) {
              // Move model horizontally from left to right as you scroll
        // Start at left side (-200), end at right side (200) for full movement
        const startX = -250
-       const endX = 200
+       const endX = 250
       const xPosition = startX + (scrollProgress * (endX - startX))
       modelRef.current.position.x = xPosition
       
       // Keep Y position for subtle vertical movement
-      const startY = -100 // Start Y position
+      const startY = -150 // Start Y position
       const endY = 200 // End Y position
       const yPosition = startY - (scrollProgress * (startY - endY))
       modelRef.current.position.y = yPosition + Math.sin(state.clock.elapsedTime * 0.5) * 0.3
@@ -211,7 +211,7 @@ function AnatomyModel({}: AnatomyModelProps) {
   return (
     <div className="w-full h-full">
       <Canvas
-        camera={{ position: [0,100, 800], fov: 40}}
+        camera={{ position: [-200 ,100, 700], fov: 40}}
         gl={{ 
           antialias: true, 
           alpha: true,

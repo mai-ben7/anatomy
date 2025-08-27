@@ -1,135 +1,160 @@
-<<<<<<< HEAD
-# Human Anatomy 3D Explorer
+# Anatomy 3D Website - Personal Training Platform
 
-An interactive, futuristic web application for exploring human anatomy through 3D visualization and educational content.
+A modern, interactive website showcasing 3D anatomy models with Hebrew content, RTL support, and comprehensive hardening features for production deployment.
 
-## Features
+## 🚀 Features
 
-- **3D Model Integration**: Interactive 3D anatomical model using React Three Fiber
-- **Scroll-Based Interactions**: Model rotates and highlights based on scroll position
-- **Futuristic Design**: Clean, modern UI with neon accents and particle effects
-- **Educational Content**: Detailed information about body systems with expandable cards
-- **Smooth Animations**: Framer Motion powered animations and transitions
-- **Responsive Design**: Optimized for all device sizes
+### Core Features
+- **3D Anatomy Models** - Interactive Three.js models with scroll-based rotation
+- **Hebrew Content** - Full RTL support with Hebrew typography
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Modern Animations** - Framer Motion animations with reduced motion support
 
-## Tech Stack
+### Hardening & Security Features
+- **Content Security Policy (CSP)** - Comprehensive security headers
+- **Error Boundaries** - Graceful error handling with fallback UI
+- **Hydration Guards** - Prevents SSR/CSR mismatches
+- **Reduced Motion Support** - Accessibility compliance
+- **Type Safety** - Full TypeScript implementation
+- **Testing Setup** - Jest + React Testing Library
+- **Design Tokens** - Consistent theming system
+- **Content Management** - JSON-based content with i18n support
 
-- **Next.js 14** with App Router
-- **React Three Fiber** for 3D rendering
-- **Framer Motion** for animations
-- **Tailwind CSS** for styling
-- **TypeScript** for type safety
-- **Lucide React** for icons
+## 🛠️ Tech Stack
 
-## Getting Started
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **3D Graphics**: Three.js + React Three Fiber
+- **Animations**: Framer Motion + GSAP
+- **Testing**: Jest + React Testing Library
+- **Icons**: Lucide React
 
-### Prerequisites
+## 📦 Installation
 
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd anatomy-main
-```
-
-2. Install dependencies:
-```bash
+# Install dependencies
 npm install
-```
 
-3. Run the development server:
-```bash
+# Run development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+
+# Run tests
+npm test
+
+# Run tests with coverage
+npm run test:coverage
+
+# Type checking
+npm run type-check
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+## 🔧 Configuration
 
-## Project Structure
+### Environment Variables
+Create a `.env.local` file:
 
-```
-anatomy-main/
-├── app/
-│   ├── globals.css          # Global styles and Tailwind config
-│   ├── layout.tsx           # Root layout component
-│   └── page.tsx             # Main page component
-├── components/
-│   ├── AnatomyModel.tsx     # 3D model component
-│   ├── HeroSection.tsx      # Hero section with animations
-│   ├── AnatomySection.tsx   # System-specific sections
-│   ├── SystemOverview.tsx   # Overview of all systems
-│   └── ParticleEffect.tsx   # Background particle effects
-├── public/
-│   └── male anatomical body 3d/
-│       ├── anatomy_model.gltf  # 3D model file
-│       ├── scene.bin           # Model binary data
-│       └── license.txt         # Model license
-└── package.json
+```env
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+NEXT_PUBLIC_GA_ID=your-google-analytics-id
 ```
 
-## 3D Model
+### Content Management
+Edit content in `/content/site-content.json` for easy updates without code changes.
 
-The application uses a high-quality 3D anatomical model in GLTF format. The model is optimized for web performance and includes:
+### Design Tokens
+Modify design tokens in `/lib/design-tokens.ts` for consistent theming.
 
-- Detailed anatomical structures
-- Proper material setup with glow effects
-- Responsive scaling and positioning
-- Scroll-based rotation and interaction
+## 🧪 Testing
 
-## Customization
+The project includes comprehensive testing setup:
 
-### Colors
-Modify the color scheme in `tailwind.config.js`:
-```javascript
-colors: {
-  'neon-blue': '#00d4ff',
-  'neon-teal': '#00f5d4',
-  'neon-purple': '#8b5cf6',
-  // Add your custom colors
-}
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Generate coverage report
+npm run test:coverage
 ```
 
-### Animations
-Adjust animation parameters in the component files or modify the Framer Motion configurations.
+## 🔒 Security Features
 
-### Content
-Update the system information in `AnatomySection.tsx` and `SystemOverview.tsx` to add or modify body systems.
+### Content Security Policy
+- Script sources restricted to trusted domains
+- Style sources limited to self and Google Fonts
+- Frame sources blocked for clickjacking protection
+- Object sources blocked for plugin protection
 
-## Performance Optimization
+### Security Headers
+- X-Frame-Options: DENY
+- X-Content-Type-Options: nosniff
+- Referrer-Policy: origin-when-cross-origin
+- Permissions-Policy: camera=(), microphone=(), geolocation=()
 
-- 3D model is dynamically loaded to avoid SSR issues
-- Particle effects are optimized for smooth performance
-- Images and assets are optimized for web delivery
-- Lazy loading implemented for better initial load times
+## ♿ Accessibility
 
-## Browser Support
+- **Reduced Motion Support** - Respects user preferences
+- **Focus Management** - Visible focus indicators
+- **Semantic HTML** - Proper heading structure
+- **ARIA Labels** - Screen reader support
+- **Keyboard Navigation** - Full keyboard accessibility
 
-- Chrome/Edge (recommended for best 3D performance)
-- Firefox
-- Safari
-- Mobile browsers (with reduced 3D features)
+## 🌐 Internationalization
 
-## Contributing
+- **Hebrew/English Support** - Bilingual content system
+- **RTL Layout** - Right-to-left text direction
+- **Language Switching** - Dynamic language changes
+- **Localized Content** - JSON-based content management
+
+## 📱 Performance
+
+- **Code Splitting** - Dynamic imports for 3D components
+- **Image Optimization** - Next.js Image component
+- **Bundle Analysis** - Production build optimization
+- **Lazy Loading** - Suspense boundaries for heavy components
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+```bash
+npm run build
+vercel --prod
+```
+
+### Other Platforms
+The app is optimized for any Node.js hosting platform with proper environment variables.
+
+## 📁 Project Structure
+
+```
+├── app/                    # Next.js App Router
+├── components/            # React components
+├── content/              # JSON content files
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+├── public/               # Static assets
+├── __tests__/           # Test files
+└── design-tokens.ts     # Design system
+```
+
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+4. Add tests for new features
+5. Run the test suite
+6. Submit a pull request
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License. The 3D model has its own license - see `public/male anatomical body 3d/license.txt`.
-
-## Acknowledgments
-
-- 3D model provided by [source]
-- Icons from Lucide React
-- Animations powered by Framer Motion
-- 3D rendering with React Three Fiber
-=======
-# anatomy
->>>>>>> a7e619cda5dbacb7d280bb65ab6808d91c338bd6
+This project is licensed under the MIT License.

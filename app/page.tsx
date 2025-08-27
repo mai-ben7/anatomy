@@ -1,72 +1,27 @@
 'use client'
 
-import { Suspense, useState, useEffect } from 'react'
-import dynamic from 'next/dynamic'
-import HeroSection from '@/components/HeroSection'
-import Footer from '@/components/Footer'
-import ParticleEffect from '@/components/ParticleEffect'
-import MuscleExplanations from '@/components/MuscleExplanations'
-
-// Dynamically import the 3D components to avoid SSR issues
-const AnatomyModel = dynamic(() => import('@/components/AnatomyModel'), {
-  ssr: false,
-  loading: () => (
-    <div className="flex items-center justify-center h-full">
-      <div className="text-neon-blue text-xl">Loading 3D Model...</div>
-    </div>
-  ),
-})
+import { useState } from 'react'
 
 export default function Home() {
-  const [scrollProgress, setScrollProgress] = useState(0)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY
-      const screenHeight = window.innerHeight
-      const maxScroll = screenHeight * 6 // 6 full screen heights for complete 360 rotation
-      const progress = Math.max(0, Math.min(scrollY / maxScroll, 1))
-      setScrollProgress(progress)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  const [count, setCount] = useState(0)
 
   return (
-    <main className="min-h-screen bg-dark-bg relative">
-      <ParticleEffect />
-      
-      {/* Content overlay */}
-      <div className="relative z-10">
-        {/* Hero Section */}
-        <section className="relative h-screen overflow-hidden">
-          <div className="relative z-20 h-full flex items-center justify-start pl-8">
-            <HeroSection />
-          </div>
-        </section>
-
-        {/* 3D Model only in body systems sections */}
-        <div className="relative">
-          <div className="fixed inset-0 z-0 pointer-events-none">
-            <Suspense fallback={<div className="text-neon-blue">Loading...</div>}>
-              <AnatomyModel />
-            </Suspense>
-          </div>
-          
-          {/* Muscle Explanations */}
-          <MuscleExplanations scrollProgress={scrollProgress} />
-          
-                      {/* Empty sections to maintain space for 3D model animation */}
-           <section className="min-h-screen"></section>
-           <section className="min-h-screen"></section>
-           <section className="min-h-screen"></section>
-           <section className="min-h-screen"></section>
-           <section className="min-h-screen"></section>
-        </div>
-
-        {/* Footer - no 3D model here */}
-        <Footer />
+    <main className="min-h-screen bg-dark-bg flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-6xl font-bold mb-6">
+          <span className="text-white">אימון</span>
+          <br />
+          <span className="text-neon-blue">אישי</span>
+        </h1>
+        <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          השג את המטרות שלך עם ליווי מקצועי מותאם אישית ותוכניות אימונים מתקדמות
+        </p>
+        <button 
+          onClick={() => setCount(count + 1)}
+          className="px-8 py-4 bg-neon-blue/20 border border-neon-blue/50 rounded-full text-neon-blue hover:bg-neon-blue/30 transition-all duration-300"
+        >
+          התחל עכשיו - Count: {count}
+        </button>
       </div>
     </main>
   )

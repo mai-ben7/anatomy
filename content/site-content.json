@@ -1,0 +1,316 @@
+{
+  "site": {
+    "title": "אימון אישי - Personal Training",
+    "description": "השג את המטרות שלך עם ליווי מקצועי מותאם אישית ותוכניות אימונים מתקדמות",
+    "keywords": "אימון אישי, כושר, ירידה במשקל, בניית שרירים, מאמן אישי",
+    "language": "he",
+    "direction": "rtl"
+  },
+  "hero": {
+    "title": {
+      "he": "אימון אישי",
+      "en": "Personal Training"
+    },
+    "subtitle": {
+      "he": "השג את המטרות שלך עם ליווי מקצועי מותאם אישית ותוכניות אימונים מתקדמות",
+      "en": "Achieve your goals with professional personalized guidance and advanced training programs"
+    },
+    "cta": {
+      "he": "התחל עכשיו",
+      "en": "Start Now"
+    },
+    "features": [
+      {
+        "icon": "Dumbbell",
+        "text": {
+          "he": "אימוני כוח",
+          "en": "Strength Training"
+        },
+        "color": "neon-blue"
+      },
+      {
+        "icon": "Heart",
+        "text": {
+          "he": "כושר לב-ריאה",
+          "en": "Cardiovascular Fitness"
+        },
+        "color": "neon-teal"
+      },
+      {
+        "icon": "Target",
+        "text": {
+          "he": "ירידה במשקל",
+          "en": "Weight Loss"
+        },
+        "color": "neon-purple"
+      }
+    ]
+  },
+  "about": {
+    "title": {
+      "he": "אודות המאמן",
+      "en": "About the Trainer"
+    },
+    "subtitle": {
+      "he": "מאמן אישי מוסמך עם ניסיון של למעלה מ-10 שנים",
+      "en": "Certified personal trainer with over 10 years of experience"
+    },
+    "description": {
+      "he": "אני מאמין שכל אדם יכול להשיג את המטרות שלו עם הגישה הנכונה והליווי המקצועי המתאים. אני מתמחה בבניית תוכניות אימונים מותאמות אישית שמתאימות לאורח החיים שלך ומטרותיך.",
+      "en": "I believe that every person can achieve their goals with the right approach and appropriate professional guidance. I specialize in building personalized training programs that fit your lifestyle and goals."
+    },
+    "stats": [
+      {
+        "number": "500+",
+        "label": {
+          "he": "לקוחות מרוצים",
+          "en": "Happy Clients"
+        }
+      },
+      {
+        "number": "10+",
+        "label": {
+          "he": "שנות ניסיון",
+          "en": "Years Experience"
+        }
+      },
+      {
+        "number": "95%",
+        "label": {
+          "he": "שיעור הצלחה",
+          "en": "Success Rate"
+        }
+      }
+    ]
+  },
+  "courses": {
+    "title": {
+      "he": "תוכניות אימונים",
+      "en": "Training Programs"
+    },
+    "subtitle": {
+      "he": "בחר את התוכנית המתאימה לך",
+      "en": "Choose the program that suits you"
+    },
+    "programs": [
+      {
+        "id": "beginner",
+        "title": {
+          "he": "מתחילים",
+          "en": "Beginner"
+        },
+        "price": {
+          "he": "₪299",
+          "en": "$99"
+        },
+        "duration": {
+          "he": "חודש",
+          "en": "Month"
+        },
+        "features": [
+          {
+            "he": "2 אימונים בשבוע",
+            "en": "2 workouts per week"
+          },
+          {
+            "he": "תוכנית תזונה בסיסית",
+            "en": "Basic nutrition plan"
+          },
+          {
+            "he": "ליווי טלפוני",
+            "en": "Phone support"
+          }
+        ],
+        "cta": {
+          "he": "התחל עכשיו",
+          "en": "Start Now"
+        }
+      },
+      {
+        "id": "intermediate",
+        "title": {
+          "he": "מתקדמים",
+          "en": "Intermediate"
+        },
+        "price": {
+          "he": "₪499",
+          "en": "$149"
+        },
+        "duration": {
+          "he": "חודש",
+          "en": "Month"
+        },
+        "features": [
+          {
+            "he": "3 אימונים בשבוע",
+            "en": "3 workouts per week"
+          },
+          {
+            "he": "תוכנית תזונה מתקדמת",
+            "en": "Advanced nutrition plan"
+          },
+          {
+            "he": "ליווי אישי מלא",
+            "en": "Full personal support"
+          },
+          {
+            "he": "מדידות שבועיות",
+            "en": "Weekly measurements"
+          }
+        ],
+        "cta": {
+          "he": "התחל עכשיו",
+          "en": "Start Now"
+        },
+        "popular": true
+      },
+      {
+        "id": "advanced",
+        "title": {
+          "he": "מקצועי",
+          "en": "Professional"
+        },
+        "price": {
+          "he": "₪799",
+          "en": "$199"
+        },
+        "duration": {
+          "he": "חודש",
+          "en": "Month"
+        },
+        "features": [
+          {
+            "he": "5 אימונים בשבוע",
+            "en": "5 workouts per week"
+          },
+          {
+            "he": "תוכנית תזונה מותאמת אישית",
+            "en": "Personalized nutrition plan"
+          },
+          {
+            "he": "ליווי 24/7",
+            "en": "24/7 support"
+          },
+          {
+            "he": "מדידות יומיות",
+            "en": "Daily measurements"
+          },
+          {
+            "he": "אימונים קבוצתיים",
+            "en": "Group training"
+          }
+        ],
+        "cta": {
+          "he": "התחל עכשיו",
+          "en": "Start Now"
+        }
+      }
+    ]
+  },
+  "booking": {
+    "title": {
+      "he": "ספר אימון",
+      "en": "Book a Session"
+    },
+    "subtitle": {
+      "he": "צור קשר עכשיו ותתחיל את המסע שלך",
+      "en": "Contact us now and start your journey"
+    },
+    "form": {
+      "name": {
+        "label": {
+          "he": "שם מלא",
+          "en": "Full Name"
+        },
+        "placeholder": {
+          "he": "הכנס את שמך המלא",
+          "en": "Enter your full name"
+        }
+      },
+      "email": {
+        "label": {
+          "he": "אימייל",
+          "en": "Email"
+        },
+        "placeholder": {
+          "he": "הכנס את כתובת האימייל שלך",
+          "en": "Enter your email address"
+        }
+      },
+      "phone": {
+        "label": {
+          "he": "טלפון",
+          "en": "Phone"
+        },
+        "placeholder": {
+          "he": "הכנס את מספר הטלפון שלך",
+          "en": "Enter your phone number"
+        }
+      },
+      "message": {
+        "label": {
+          "he": "הודעה",
+          "en": "Message"
+        },
+        "placeholder": {
+          "he": "ספר לנו על המטרות שלך",
+          "en": "Tell us about your goals"
+        }
+      },
+      "submit": {
+        "he": "שלח הודעה",
+        "en": "Send Message"
+      }
+    }
+  },
+  "footer": {
+    "contact": {
+      "title": {
+        "he": "צור קשר",
+        "en": "Contact"
+      },
+      "phone": "+972-50-123-4567",
+      "email": "info@personaltraining.co.il",
+      "address": {
+        "he": "רחוב הרצל 123, תל אביב",
+        "en": "123 Herzl Street, Tel Aviv"
+      }
+    },
+    "social": {
+      "title": {
+        "he": "עקבו אחרינו",
+        "en": "Follow Us"
+      },
+      "links": [
+        {
+          "platform": "facebook",
+          "url": "https://facebook.com/personaltraining",
+          "label": {
+            "he": "פייסבוק",
+            "en": "Facebook"
+          }
+        },
+        {
+          "platform": "instagram",
+          "url": "https://instagram.com/personaltraining",
+          "label": {
+            "he": "אינסטגרם",
+            "en": "Instagram"
+          }
+        },
+        {
+          "platform": "youtube",
+          "url": "https://youtube.com/personaltraining",
+          "label": {
+            "he": "יוטיוב",
+            "en": "YouTube"
+          }
+        }
+      ]
+    },
+    "copyright": {
+      "he": "© 2024 אימון אישי. כל הזכויות שמורות.",
+      "en": "© 2024 Personal Training. All rights reserved."
+    }
+  }
+}
